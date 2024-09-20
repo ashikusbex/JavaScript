@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+#heading {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/images/Aurora1.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.navbar {
+  width: 98%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 10;
+}
+
+.navbar .logo img {
+  width: 200px;
+  margin: 30px 0;
+  cursor: pointer;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user img {
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin: 0 50px 0 50px;
+}
+
+button {
+  padding: 8px 25px;
+  background: transparent;
+  outline: none;
+  border: 2px solid white;
+  border-radius: 20px;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.container {
+  width: 50%;
+  height: 100vh;
+  background: rgba(86, 86, 86, 0.3);
+  backdrop-filter: blur (10px);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.info {
+  width: 550px;
+  color: white;
+  position: absolute;
+  right: 20%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.info h1 {
+  font-size: 60px;
+  /* letter-spacing: 2px; */
+}
+
+.info p {
+  color: white;
+  font-size: 16px;
+  margin: 20px 0;
+  line-height: 20px;
+}
+
+.info input {
+  width: 50%;
+  padding: 8px 10px;
+  outline: none;
+  border: 2px solid white;
+  border-radius: 20px;
+  background: transparent;
+  color: white;
+  font-size: 14px;
+}
+
+::placeholder {
+  color: #cccccc;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 30px;
+  bottom: 50px;
+}
+#prev,
+#next {
+  width: 20px;
+  cursor: pointer;
+}
+
+.preview {
+  display: flex;
+  align-items: center;
+  margin: 0 60px;
+}
+
+.preview img {
+  width: 200px;
+  margin: 0 10px;
+  opacity: 0.5;
+}
+
+.preview .active {
+  display: block;
+  border: 3px solid white;
+  width: 200px;
+  opacity: 1;
+}
